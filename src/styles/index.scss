@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+
 body{
     display: flex;
     height: 100vh;
@@ -37,7 +38,7 @@ box-shadow: 5px 5px 10px #888888;
     border: 6px solid  #5da7a6;    
 }
 .red {
-    background-color: red;
+    background-color: red;    
 }
 .yellow{
     background-color: yellow;
@@ -49,7 +50,44 @@ box-shadow: 5px 5px 10px #888888;
     box-shadow:#f8ffcc 0px 0px 30px 20px;
     transition: width 2s;
 }
-.title {
-    color: white;
-    text-align: center;
+.iconContainer {
+    background-color: white;
+    border: 2px solid  #5da7a6;
+    width: 85px;
+    height: 85px; 
+    margin-top: 20px;    
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #888888;
+    font-size: 60px;
+    color: #5da7a6;
+    text-align: center;    
+}
+.iconStop::before {
+    font-family: "Font Awesome\ 5 Free"; 
+    content: "\f256";
+    font-weight: 900;
+    color:#5da7a6;  
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;   
+}
+.iconWarning {
+    background-color: yellow;
+    font-family: "Font Awesome\ 5 Free"; 
+    content: "\f071";
+    font-weight: 900;
+    color:#5da7a6;  
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;   
+}
+.iconGo {
+    background-color: green;
+    font-family: "Font Awesome\ 5 Free"; 
+    content: "\f554";
+    font-weight: 900;
+    color:#5da7a6;  
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;  
 }

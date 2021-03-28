@@ -4,7 +4,6 @@ export function TrafficLight() {
 	const [color, setColor] = useState("");
 	return (
 		<div>
-			{/* <div className="title">ReactJS Traffic Light</div> */}
 			<div className="cable"></div>
 			<div className="container">
 				<div
@@ -29,6 +28,22 @@ export function TrafficLight() {
 					}
 					onClick={() => setColor("green")}></div>
 			</div>
+
+			{/* icons start */}
+			<div className="iconContainer">
+				<i
+					className={
+						color === "red"
+							? "fas fa-hand-paper"
+							: color === "green"
+							? "fas fa-walking"
+							: color === "yellow"
+							? "fas fa-exclamation-triangle"
+							: " "
+					}
+				/>
+			</div>
+			{/* icons end */}
 		</div>
 	);
 }
