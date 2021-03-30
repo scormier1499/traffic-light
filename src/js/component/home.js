@@ -4,7 +4,7 @@ export function TrafficLight() {
 	const [color, setColor] = useState("");
 	return (
 		<div>
-			<div className="cable"></div>
+			{/* <div className="cable"></div> */}
 			<div className="container">
 				<div
 					className={
@@ -30,6 +30,7 @@ export function TrafficLight() {
 			</div>
 
 			{/* icons start */}
+			<div className="post"></div>
 			<div className="iconContainer">
 				<i
 					className={
@@ -43,6 +44,8 @@ export function TrafficLight() {
 					}
 				/>
 			</div>
+			<div className="post2"></div>
+			<div className="base"></div>
 			{/* icons end */}
 		</div>
 	);
